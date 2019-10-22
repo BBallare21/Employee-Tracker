@@ -1,0 +1,24 @@
+{
+  "name": "Employee-Tracker",
+  "version": "1.0.0",
+  "description": "​\r Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. In this homework assignment, your challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.\r ​\r ## Instructions\r ​\r Design the following database schema containing three tables:\r ​\r ![Database Schema](Assets/schema.png)\r ​\r * **department**:\r ​\r   * **id** - INT PRIMARY KEY\r   * **name** - VARCHAR(30) to hold department name\r ​\r * **role**:\r ​\r   * **id** - INT PRIMARY KEY\r   * **title** -  VARCHAR(30) to hold role title\r   * **salary** -  DECIMAL to hold role salary\r   * **department_id** -  INT to hold reference to department role belongs to\r ​\r * **employee**:\r ​\r   * **id** - INT PRIMARY KEY\r   * **first_name** - VARCHAR(30) to hold employee first name\r   * **last_name** - VARCHAR(30) to hold employee last name\r   * **role_id** - INT to hold reference to role employee has\r   * **manager_id** - INT to hold reference to another employee thats manager of the current employee. This field may be null if the employee has no manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BBallare21/Employee-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BBallare21/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/BBallare21/Employee-Tracker#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0",
+    "mysql": "^2.17.1"
+  }
+}
